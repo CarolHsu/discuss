@@ -1,1 +1,2 @@
-<h1>Topic new page</h1>
+<%= form_for @changeset, topic_path(@conn, :create), fn f -> %>
+<% end %>
