@@ -2,6 +2,8 @@ defmodule Discuss.TopicController do
   use Discuss.Web, :controller
 
   def new(conn, params) do
-    conn
+    struct = %Discuss.Topic{}
+    params = %{}
+    changeset = Discuss.Topic.changeset(struct, params)
   end
 end
