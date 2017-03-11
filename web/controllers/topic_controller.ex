@@ -9,4 +9,7 @@ defmodule Discuss.TopicController do
     render conn, "new.html", changeset: changeset
     #conn is default passed
   end
+
+  def create(conn, %{"topic" => topic} = params) do
+  end
 end
