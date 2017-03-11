@@ -3,13 +3,13 @@ defmodule Discuss.TopicController do
 
   alias Discuss.Topic
 
-  def new(conn, params) do
+  def new(conn, _params) do
     changeset = Topic.changeset(%Topic{}, %{})
 
     render conn, "new.html", changeset: changeset
     #conn is default passed
   end
 
-  def create(conn, %{"topic" => topic} = params) do
+  def create(conn, %{"topic" => topic}) do
   end
 end
