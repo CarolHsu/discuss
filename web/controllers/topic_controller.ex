@@ -6,6 +6,7 @@ defmodule Discuss.TopicController do
   def new(conn, params) do
     changeset = Topic.changeset(%Topic{}, %{})
 
-    render conn, "new.html"
+    render conn, "new.html", changeset: changeset
+    #conn is default passed
   end
 end
