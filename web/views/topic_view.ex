@@ -1,3 +1,3 @@
 defmodule Discuss.TopicView do
-  ues Discuss.Web, :view
+  use Discuss.Web, :view
 end
