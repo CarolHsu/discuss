@@ -28,9 +28,10 @@ config :ueberauth, Ueberauth,
     github: { Ueberauth.Strategy.Github, [] }
   ]
 
+  #TODO: hide the secrets
 config :ueberauth, Ueberauth.Strategy.Github.OAuth,
-  client_id: System.get_env("GITHUB_CLIENT_ID"),
-  client_secret: System.get_env("GITHUB_CLIENT_SECRET")
+  client_id: "dba31ae42c901db9f6ba",
+  client_secret: "1b1672ed9fee695a5c7a2422d1e7f79a820041fb"
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
