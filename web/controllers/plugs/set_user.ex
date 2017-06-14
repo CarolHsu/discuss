@@ -1,5 +1,5 @@
 defmodule Discuss.Plugs.SetUser do
-  import Plug.conn
+  import Plug.Conn
   # assign
   import Phoenix.Controller
   # get_session
