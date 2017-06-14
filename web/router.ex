@@ -29,6 +29,7 @@ defmodule Discuss.Router do
   scope "/auth", Discuss do
     pipe_through :browser
 
+    get "signout", AuthController, :signout
     get "/:provider", AuthController, :request #defined by ueberauth automatically
     get "/:provider/callback", AuthController, :callback
     # :provider => not only for github but others (facebook, twitter... etc.)
